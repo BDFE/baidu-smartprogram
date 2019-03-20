@@ -1,0 +1,12 @@
+<view class="product-list">
+  <!--条件选择-->
+  <view class="choice-bar">
+    <view bindtap="choiceItem" data-item="2" class="chioce-item" hover-class="click-once-opaque">
+      {{activeSortingName}} <image class="icon-chioce" src="{{sortingChioceIcon}}"></image>
+    </view>
+    <view class="sorting-list{{!chioceSorting?' chioce-list-hide':' chioce-list-show'}}">
+      <view s-for="item, index in sortingList" catchtap="selectSorting" data-index="{{index}}" class="sorting-item" hover-class="click-once">{{item.value}}</view>
+    </view>
+  </view>
+    <view bindtap="hideAllChioce" class="mask" hidden="{{!chioceDistrict&&!chioceSorting&&!chioceFilter}}">
+</view>

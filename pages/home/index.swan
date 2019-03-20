@@ -1,0 +1,10 @@
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<view class="container">
+    <view class='home-page' style='margin-top: {{height}}px'>
+         home page
+    </view>
+    <view class="more_labels">
+        <text>浏览110</text>
+    </view>
+</view>
+

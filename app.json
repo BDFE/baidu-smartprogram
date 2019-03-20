@@ -1,0 +1,46 @@
+{
+    "debug": false,
+    "pages": [
+        "pages/home/index",
+        "pages/map/index",
+        "pages/products/index",
+        "pages/productdetail/index"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "默认标题",
+        "navigationBarTextStyle": "black",
+        "backgroundTextStyle": "black",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+    },
+    "networkTimeout": {
+        "request": 30000,
+        "connectSocket": 10000,
+        "uploadFile": 10000,
+        "downloadFile": 10000
+    },
+    "tabBar": {
+        "custom": true,
+        "color": "#a2a2a2",
+        "selectedColor": "#3388ff",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [{
+            "text": "地图",
+            "pagePath": "pages/map/index",
+            "iconPath": "images/list.png",
+            "selectedIconPath": "images/list_color.png"
+        }, {
+            "text": "首页",
+            "pagePath": "pages/home/index",
+            "iconPath": "images/list.png",
+            "selectedIconPath": "images/list_color.png"
+        }, {
+            "text": "产品",
+            "pagePath": "pages/products/index",
+            "iconPath": "images/list.png",
+            "selectedIconPath": "images/list_color.png"
+        }]
+    }
+}
